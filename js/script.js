@@ -3,19 +3,17 @@
 //selezioniamo i tag html che ci interessano
 const lamp = document.querySelector('img');
 const btn = document.querySelector('button');
-
-console.log(lamp, btn);//Verifico selezioni
+const btntext = btn.innerText;
+console.log(lamp, btn, btntext);//Verifico selezioni
 
 //quando viene fatto un click sul bottone
  btn.addEventListener("click",
     function () {
-        if( lamp.classList.contains("on")){
-            lamp.classList.remove("on");
+        if( btn.innerText.includes('Spegni')){
             lamp.src = "./img/white_lamp.png";
             lamp.alt = "lampadina spenta";
             btn.innerText = "Accendi";
         } else {
-            lamp.classList.add("on");
             lamp.src = "./img/yellow_lamp.png";
             lamp.alt = "lampadina accesa";
             btn.innerText = "Spegni";
