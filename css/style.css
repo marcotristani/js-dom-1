@@ -18,3 +18,13 @@
     font-size: x-large;
     padding: 1rem;
 }
+.warning-mex {
+    display: none;
+    font-size: x-large;
+    background-color: red;
+    color: yellow;
+    margin: 2rem;
+}
+.active {
+    display: block;
+}
