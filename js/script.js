@@ -13,10 +13,12 @@ console.log(lamp, btn);//Verifico selezioni
             lamp.classList.remove("on");
             lamp.src = "./img/white_lamp.png";
             lamp.alt = "lampadina spenta";
+            btn.innerText = "Accendi";
         } else {
             lamp.classList.add("on");
             lamp.src = "./img/yellow_lamp.png";
             lamp.alt = "lampadina accesa";
+            btn.innerText = "Spegni";
         }
     }
  )
