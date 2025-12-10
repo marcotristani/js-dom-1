@@ -14,12 +14,14 @@ console.log(lamp, btn, btntext);//Verifico selezioni
             lamp.alt = "lampadina spenta";
             btn.innerText = "Accendi";
             btn.style.backgroundColor = 'transparent';
+            btn.className = 'off';
             
         } else {
             lamp.src = "./img/yellow_lamp.png";
             lamp.alt = "lampadina accesa";
             btn.innerText = "Spegni";
             btn.style.backgroundColor = 'red';
+            btn.className = 'on';
         }
     }
  )
