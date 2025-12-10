@@ -7,12 +7,16 @@ const btn = document.querySelector('button');
 console.log(lamp, btn);//Verifico selezioni
 
 //quando viene fatto un click sul bottone
-btn.addEventListener("click",
+ btn.addEventListener("click",
     function () {
-        lamp.src = "./img/yellow_lamp.png";         //allora l'immagine cambierà con l'immagine della lampadina accesa
-        
+        if( lamp.classList.contains("on")){
+            lamp.classList.remove("on");
+            lamp.src = "./img/white_lamp.png";
+            lamp.alt = "lampadina spenta";
+        } else {
+            lamp.classList.add("on");
+            lamp.src = "./img/yellow_lamp.png";
+            lamp.alt = "lampadina accesa";
+        }
     }
-)
-
-// se l'immagine presente è quella della lampadina accesa allora quando viene fatto un click sul bottone
-//l'immagine cambierà con quella della lampadina spenta
+ )
