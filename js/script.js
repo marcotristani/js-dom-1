@@ -13,10 +13,13 @@ console.log(lamp, btn, btntext);//Verifico selezioni
             lamp.src = "./img/white_lamp.png";
             lamp.alt = "lampadina spenta";
             btn.innerText = "Accendi";
+            btn.style.backgroundColor = 'transparent';
+            
         } else {
             lamp.src = "./img/yellow_lamp.png";
             lamp.alt = "lampadina accesa";
             btn.innerText = "Spegni";
+            btn.style.backgroundColor = 'red';
         }
     }
  )
